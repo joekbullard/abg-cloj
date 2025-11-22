@@ -1,0 +1,2 @@
+{:connect {:host "localhost"
+           :port 7888}}

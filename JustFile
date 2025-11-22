@@ -1,0 +1,24 @@
+# Shows available recipes
+help:
+    just --list
+
+run:
+    clojure -M -m abg-web.main
+
+nrepl:
+    clojure -M:dev nrepl.cmdline
+
+dev-repl:
+    clojure -M:dev:nREPL -m nrepl.cmdline --port 7888
+
+format_check:
+    clojure -M:format -m cljfmt.main check src dev test
+
+format:
+    clojure -M:format -m cljfmt.main fix src dev test
+
+lint:
+    clojure -M:lint -m clj-kondo.main --lint .
+
+test:
+    clojure -M:dev -m kaocha.runner
