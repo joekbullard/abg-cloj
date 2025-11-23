@@ -1,0 +1,18 @@
+# Java / JVM
+*.class
+*.jar
+*.war
+*.ear
+
+# Clojure/REPL tooling
+/.cpcache/
+/.nrepl-port
+
+# tools.deps
+/.clj-kondo/.cache/
+/.target/
+/.clojure/
+
+# Boot
+/boot.properties
+/.boot/
